@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture-02</title>
+  </head>
+
+  <body>
+    <form>
+      <h2>Apply For Act-Hub Courses</h2>
+
+      <label>
+        Name
+        <input type="text" placeholder="Your name" required />
+      </label>
+      <br />
+      <label>
+        Age
+        <input type="number" placeholder="Your age in numbers" required />
+      </label>
+      <br />
+      <label>
+        Phone Number
+        <input
+          type="tel"
+          placeholder="Your phone number in correct format"
+          required
+        />
+      </label>
+      <br />
+      <label>
+        Email
+        <input type="text" placeholder="Your valid email" required />
+      </label>
+      <br />
+      <label for="password-input"
+        >Password
+        <input
+          type="password"
+          id="password-input"
+          placeholder="Your password"
+        />
+      </label>
+      <h4>Your Gender</h4>
+      <input
+        type="radio"
+        name="gender-input"
+        id="male-radio-input"
+        value="male"
+      />
+      <label for="male-radio-input"> I am a Male</label>
+
+      <input
+        type="radio"
+        name="gender-input"
+        id="female-radio-input"
+        value="female"
+      />
+      <label for="female-radio-input"> I am a Female</label>
+
+      <h4>Select Course</h4>
+
+      <input
+        type="radio"
+        name="courses-input"
+        id="course-1"
+        value="course-1"
+        checked
+      />
+      <label for="course-1"> Front-End Development</label>
+
+      <input type="radio" name="courses-input" id="course-2" value="course-2" />
+      <label for="course-2"> Back-End Development</label>
+
+      <input type="radio" name="courses-input" id="course-3" value="course-3" />
+      <label for="course-3">UI/UX</label>
+
+<br>
+<br>
+<br>
+
+
+      <!-- Second Option -->
+
+      <select>
+        <option selected>Select a Course</option>
+        <option value="course-1">Front-End Development</option>
+        <option value="course-2">Back-End Development</option>
+        <option value="course-3">UI/UX</option>
+      </select>
+
+      <h4>Select your skills</h4>
+      <input type="checkbox" name="skills-input" id="html" value="html" checked>
+      <label for="html">Html</label>
+
+      <input type="checkbox" name="skills-input" id="css" value="css" checked>
+      <label for="css">Css</label>
+
+      <input type="checkbox" name="skills-input" id="javascript" value="javascript" checked>
+      <label for="javascript">Javascript</label>
+
+      <br>
+      <br>
+      <label for="message-textarea">Your message</label>
+      <br>
+      <textarea id="message-textarea" rows="5" cols="40" disabled></textarea>
+      <br>
+      <button type="submit">Sign up</button>
+    </form>
+  </body>
+</html>
